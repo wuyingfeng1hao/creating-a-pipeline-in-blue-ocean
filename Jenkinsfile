@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm_install.sh'
+        npm config set proxy=http://10.178.148.69:3128
+        sh 'nmp install'
       }
     }
 
